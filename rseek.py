@@ -5,7 +5,7 @@ import re,sys,argparse
 from pathlib import Path
 
 def rseek(directory,filetype,text):
-    exception_errors = [KeyboardInterrupt,IsADirectoryError,UnicodeDecodeError]
+    
     if filetype.lower() == 'all':
         filetype = '*'
     for path in Path(directory).rglob('*.' + str(filetype)):
