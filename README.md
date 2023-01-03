@@ -6,7 +6,7 @@ rseek is a Python recursive string and regex utility. It allows you to recursive
 
 ~~~
 
-usage: rseek.py [-h] (-t TEXT | -r REGEX) -d DIRECTORY [-f FILETYPE]
+usage: rseek.py [-h] (-t TEXT | -r REGEX | -s SECRETS) -d DIRECTORY [-f FILETYPE]
 
 options:
   -h, --help            show this help message and exit
@@ -17,6 +17,8 @@ options:
                         The directory to search in
   -f FILETYPE, --filetype FILETYPE
                         The file extention to search for, can specify 'all' to search for any extension
+  -s SECRETS, --secrets SECRETS
+                        File containing the regexes to search for
 ~~~
 
       
