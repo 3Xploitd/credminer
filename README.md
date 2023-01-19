@@ -8,17 +8,20 @@ rseek is a Python recursive string and regex utility. It allows you to recursive
 
 usage: rseek.py [-h] (-t TEXT | -r REGEX | -s SECRETS) -d DIRECTORY [-f FILETYPE]
 
+usage: rseek.py [-h] (-t TEXT | -r REGEX | -s) -d DIRECTORY -f FILETYPE [-a ADDREGEX]
+
 options:
   -h, --help            show this help message and exit
   -t TEXT, --text TEXT  text or to search for
   -r REGEX, --regex REGEX
                         regular expression to match on
+  -s, --secrets         Secrets to search for
   -d DIRECTORY, --directory DIRECTORY
                         The directory to search in
   -f FILETYPE, --filetype FILETYPE
-                        The file extention to search for, can specify 'all' to search for any extension
-  -s SECRETS, --secrets SECRETS
-                        File containing the regexes to search for
+                        The file extention to search for
+  -a ADDREGEX, --addregex ADDREGEX
+                        Temporarily adds a regex expression to the secrets file
 ~~~
 
       
