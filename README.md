@@ -33,5 +33,5 @@ This will search for any files under the root directory that are text files and 
 `python3 rseek.py -d / -f all -t password`
 This will search for the word password in all files under the root directory
 
-`python3 rseek.py -d / -f txt -r "(pass(?:word|code))"`
+`python3 rseek.py -d / -f txt -r "(pass|password|code|key)"`
 This will search for either the word password or passcode in text files that are under the root directory
