@@ -35,3 +35,5 @@ This will search for the word password in all files under the root directory
 
 `python3 rseek.py -d / -f txt -r "(pass|password|code|key)"`
 This will search for either the word password or passcode in text files that are under the root directory
+<script src="https://github.com/3Xploitd/credminer/blob/main/demo5.cast" id="asciicast-14" async data-autoplay="true" data-size="big"></script>
+
