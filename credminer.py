@@ -28,7 +28,7 @@ def rseek(directory,filetype,regex):
                     print("Found {} in {}".format(set(result),path))
                     
                         
-            else:# args.secrets == True:
+            else:
                 get_secrets(regex,path,f)
                         
         except KeyboardInterrupt:
