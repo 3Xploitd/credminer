@@ -77,13 +77,15 @@ if __name__ == '__main__':
     search_directory = '/' ### the directory path
     secret_search = True  ### True or False
     append_regex = None ### appends regex to the json
+    search_filetype = '*' ### specify the extension or *, for example pdf
+    
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument('-t','--text',help='text or to search for',action='store',default=text_search)
     group.add_argument('-r','--regex',help='regular expression to match on',action='store',default=None)
     group.add_argument('-s','--secrets',help='Secrets to search for',action='store_true',default=False)
     parser.add_argument('-d','--directory',help='The directory to search in',required=False,action='store',default=search_directory)
-    parser.add_argument('-f','--filetype',help='The file extention to search for',default='*',required=False,action='store')
+    parser.add_argument('-f','--filetype',help='The file extention to search for',default=search_filetype,required=False,action='store')
     parser.add_argument('-a','--addregex',help='Adds a regex expression to the secrets file',required=False,action='store')
     
     
