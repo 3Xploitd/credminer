@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 
 import re,sys,argparse,json
 from time import time
