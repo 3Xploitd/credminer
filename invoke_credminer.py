@@ -77,7 +77,7 @@ if __name__ == '__main__':
     ### only set either text_search regex_search or secret_search to something other than None, not all or it won't work ###
     text_search = None ### None or a string
     regex_search = None ### None or a regex
-    search_directory = '/' ### the directory path
+    search_directory = '.' ### the directory path
     secret_search = True  ### True or False
     append_regex = None ### appends regex to the json
     search_filetype = '*' ### specify the extension or *, for example pdf
