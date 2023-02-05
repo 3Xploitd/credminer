@@ -2,7 +2,7 @@
 
 credminer is a Python recursive string and regex utility. It allows you to recursively search through all files with in a directory and any subdirectories and matches on a string or regex. When a match is found it prints what was matched and the full path of the file it was found in to the screen. By default it will search all filetypes so unless you want to look for secrets in a specific filetype the `-f` can be ommited.
 
-![demo2.gif]()
+![secret_search.gif](https://github.com/3Xploitd/credminer/blob/5f0d943987684b7af1a91fe8059d97424e0832c9/secret_search.gif)
 
 ## usage
 
