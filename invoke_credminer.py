@@ -54,8 +54,11 @@ def rseek(directory,filetype,regex):
 
         
 def load_secrets():
+    print('[+]  Downloading Regex Patterns  [+]')
     f = get("https://raw.githubusercontent.com/3Xploitd/credminer/main/regexes.json").text
+    print('[+]  Importing Regex Patterns  [+]')
     regex = json.loads(f)
+   
     
     return regex
     
